@@ -1,0 +1,27 @@
+import pandas as pd
+from sklearn.ensemble import RandomForestClassifier
+import joblib
+
+# Load dataset
+df = pd.read_csv("data/Training.csv")
+
+# Remove unnamed column if present
+df = df.loc[:, ~df.columns.str.contains("^Unnamed")]
+X = df.drop("prognosis", axis=1)
+y = df["prognosis"]
+
+# Train model
+model = RandomForestClassifier(
+    n_estimators=100,
+    random_state=42
+)
+
+model.fit(X, y)
+
+# Save model
+joblib.dump(model, "model.pkl")
+
+# Save feature names
+joblib.dump(X.columns.tolist(), "features.pkl")
+
+print("Model trained successfully!")
