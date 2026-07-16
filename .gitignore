@@ -41,3 +41,10 @@ dist/
 # OS Files
 .DS_Store
 Thumbs.db
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Database
+*.db
