@@ -1,20 +1,80 @@
 import { Link } from "react-router-dom";
+import {
+  FaHome,
+  FaStethoscope,
+  FaPills,
+  FaRobot,
+  FaMapMarkerAlt,
+  FaInfoCircle,
+} from "react-icons/fa";
 
 function Navbar() {
   return (
-    <nav style={{
-      display: "flex",
-      gap: "20px",
-      padding: "15px",
-      background: "#1976d2"
-    }}>
-      <Link to="/" style={{color:"white"}}>Home</Link>
-      <Link to="/symptoms" style={{color:"white"}}>Symptoms</Link>
-      <Link to="/medicine" style={{color:"white"}}>Medicine</Link>
-      <Link to="/pharmacy" style={{color:"white"}}>Pharmacy</Link>
-      <Link to="/skin" style={{color:"white"}}>Skin AI</Link>
-      <Link to="/history" style={{ color: "white" }}>History</Link>
-      <Link to="/chatbot" style={{ color: "white" }}>Chatbot</Link>
+    <nav className="bg-white shadow-md sticky top-0 z-50">
+
+      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+        <Link
+          to="/"
+          className="text-2xl font-bold text-blue-600"
+        >
+          🏥 CureConnect
+        </Link>
+
+        <div className="flex gap-6">
+
+          <Link
+            to="/"
+            className="flex items-center gap-2 text-gray-700 hover:text-blue-600 transition"
+          >
+            <FaHome />
+            Home
+          </Link>
+
+          <Link
+            to="/symptoms"
+            className="flex items-center gap-2 text-gray-700 hover:text-blue-600 transition"
+          >
+            <FaStethoscope />
+            Symptoms
+          </Link>
+
+          <Link
+            to="/medicine"
+            className="flex items-center gap-2 text-gray-700 hover:text-blue-600 transition"
+          >
+            <FaPills />
+            Medicine
+          </Link>
+
+          <Link
+            to="/chatbot"
+            className="flex items-center gap-2 text-gray-700 hover:text-blue-600 transition"
+          >
+            <FaRobot />
+            Chatbot
+          </Link>
+
+          <Link
+            to="/pharmacy"
+            className="flex items-center gap-2 text-gray-700 hover:text-blue-600 transition"
+          >
+            <FaMapMarkerAlt />
+            Pharmacy
+          </Link>
+
+          <Link
+            to="/about"
+            className="flex items-center gap-2 text-gray-700 hover:text-blue-600 transition"
+          >
+            <FaInfoCircle />
+            About
+          </Link>
+
+        </div>
+
+      </div>
+
     </nav>
   );
 }

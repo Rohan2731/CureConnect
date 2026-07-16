@@ -13,6 +13,7 @@ from models.history import (
 from models.chatbot import get_response
 from models.medicine_provider import get_medicine_info
 import database
+from medicine_info import medicine_info
 
 features = joblib.load("features.pkl")
 
@@ -82,3 +83,10 @@ def medicine_details(medicine_name: str):
     )
 
     return info
+@app.get("/medicines")
+def get_medicines():
+
+    return {
+        "medicines":
+        list(medicine_info.keys())
+    }

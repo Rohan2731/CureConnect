@@ -38,5 +38,56 @@ medicine_info = {
         ],
         "precaution":
         "Take after food."
-    }
+    },
+    "Pantoprazole": {
+    "uses": [
+        "Acidity",
+        "GERD",
+        "Heartburn"
+    ],
+    "side_effects": [
+        "Headache",
+        "Nausea"
+    ],
+    "precaution":
+    "Take before meals."
+},
+
+"Amoxicillin": {
+    "uses": [
+        "Bacterial Infection"
+    ],
+    "side_effects": [
+        "Diarrhea",
+        "Nausea"
+    ],
+    "precaution":
+    "Complete full antibiotic course."
+},
+
+"Ibuprofen": {
+    "uses": [
+        "Pain Relief",
+        "Inflammation",
+        "Fever"
+    ],
+    "side_effects": [
+        "Stomach Pain",
+        "Dizziness"
+    ],
+    "precaution":
+    "Take after food."
+},
+
+"Azithromycin": {
+    "uses": [
+        "Respiratory Infections"
+    ],
+    "side_effects": [
+        "Nausea",
+        "Diarrhea"
+    ],
+    "precaution":
+    "Take as prescribed."
+}
 }

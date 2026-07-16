@@ -9,6 +9,8 @@ import Chatbot from "./pages/Chatbot";
 import PharmacyLocator from "./pages/PharmacyLocator";
 import SkinDetection from "./pages/SkinDetection";
 import History from "./pages/History";
+import About from "./pages/About";
+import Footer from "./components/Footer";
 function App() {
   return (
     <>
@@ -22,7 +24,9 @@ function App() {
         <Route path="/skin" element={<SkinDetection />} />
         <Route path="/history" element={<History />} />
         <Route path="/chatbot" element={<Chatbot />} />
+        <Route path="/about" element={<About />} />
       </Routes>
+      <Footer />
     </>
   );
 }
