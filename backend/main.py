@@ -10,6 +10,8 @@ from models.history import (
     save_prediction,
     get_history
 )
+from models.chatbot import get_response
+from models.medicine_provider import get_medicine_info
 import database
 
 features = joblib.load("features.pkl")
@@ -27,7 +29,8 @@ app.add_middleware(
 
 class SymptomRequest(BaseModel):
     symptoms: str
-
+class ChatRequest(BaseModel):
+    message: str
 @app.post("/predict")
 
 def predict(data: SymptomRequest):
@@ -61,3 +64,21 @@ def history():
     return {
         "history": records
     }
+@app.post("/chat")
+def chat(data: ChatRequest):
+
+    response = get_response(
+        data.message
+    )
+
+    return {
+        "response": response
+    }
+@app.get("/medicine/{medicine_name}")
+def medicine_details(medicine_name: str):
+
+    info = get_medicine_info(
+        medicine_name
+    )
+
+    return info

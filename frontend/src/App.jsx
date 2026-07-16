@@ -9,7 +9,6 @@ import Chatbot from "./pages/Chatbot";
 import PharmacyLocator from "./pages/PharmacyLocator";
 import SkinDetection from "./pages/SkinDetection";
 import History from "./pages/History";
-
 function App() {
   return (
     <>
@@ -19,10 +18,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/symptoms" element={<SymptomChecker />} />
         <Route path="/medicine" element={<MedicineRecommendation />} />
-        <Route path="/chatbot" element={<Chatbot />} />
         <Route path="/pharmacy" element={<PharmacyLocator />} />
         <Route path="/skin" element={<SkinDetection />} />
         <Route path="/history" element={<History />} />
+        <Route path="/chatbot" element={<Chatbot />} />
       </Routes>
     </>
   );

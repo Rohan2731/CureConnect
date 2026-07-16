@@ -79,6 +79,53 @@ function PharmacyLocator() {
           <Marker position={position} />
         </GoogleMap>
       </LoadScript>
+      <div style={{ marginTop: "30px" }}>
+
+  <h2>Buy Medicines Online</h2>
+
+  <div
+    style={{
+      display: "flex",
+      gap: "15px",
+      flexWrap: "wrap"
+    }}
+  >
+
+    <a
+      href="https://www.1mg.com"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <button>Tata 1mg</button>
+    </a>
+
+    <a
+      href="https://www.netmeds.com"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <button>NetMeds</button>
+    </a>
+
+    <a
+      href="https://pharmeasy.in"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <button>PharmEasy</button>
+    </a>
+
+    <a
+      href="https://www.apollo247.com"
+      target="_blank"
+      rel="noreferrer"
+    >
+      <button>Apollo 24/7</button>
+    </a>
+
+  </div>
+
+</div>
     </div>
   );
 }

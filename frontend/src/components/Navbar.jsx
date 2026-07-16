@@ -11,10 +11,10 @@ function Navbar() {
       <Link to="/" style={{color:"white"}}>Home</Link>
       <Link to="/symptoms" style={{color:"white"}}>Symptoms</Link>
       <Link to="/medicine" style={{color:"white"}}>Medicine</Link>
-      <Link to="/chatbot" style={{color:"white"}}>Chatbot</Link>
       <Link to="/pharmacy" style={{color:"white"}}>Pharmacy</Link>
       <Link to="/skin" style={{color:"white"}}>Skin AI</Link>
       <Link to="/history" style={{ color: "white" }}>History</Link>
+      <Link to="/chatbot" style={{ color: "white" }}>Chatbot</Link>
     </nav>
   );
 }
