@@ -17,7 +17,7 @@ function Chatbot() {
 
     try {
       const response = await axios.post(
-        "https://cureconnect-6klv.onrender.com/chatbot",
+        "https://cureconnect-6klv.onrender.com/chat",
         {
           message,
         }
