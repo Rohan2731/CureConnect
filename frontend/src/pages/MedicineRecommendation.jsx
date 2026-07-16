@@ -8,7 +8,7 @@ function Medicine() {
 
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/medicines")
+      .get("https://cureconnect-6klv.onrender.com/medicines")
       .then((res) => {
         setAllMedicines(res.data.medicines);
       })
@@ -22,7 +22,7 @@ function Medicine() {
   ) => {
     try {
       const response = await axios.get(
-        `http://127.0.0.1:8000/medicine/${medicineName}`
+        `https://cureconnect-6klv.onrender.com/medicine/${medicineName}`
       );
 
       setMedicine(medicineName);

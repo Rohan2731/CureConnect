@@ -17,7 +17,7 @@ function Chatbot() {
 
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8000/chat",
+        "https://cureconnect-6klv.onrender.com/chatbot",
         {
           message,
         }

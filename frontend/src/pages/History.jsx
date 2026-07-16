@@ -8,7 +8,7 @@ function History() {
   useEffect(() => {
 
     axios
-      .get("http://127.0.0.1:8000/history")
+      .get("https://cureconnect-6klv.onrender.com/history")
       .then((res) => {
 
         setHistory(

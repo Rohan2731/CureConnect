@@ -12,7 +12,7 @@ function SymptomChecker() {
 
   useEffect(() => {
     axios
-      .get("http://127.0.0.1:8000/symptoms")
+      .get("https://cureconnect-6klv.onrender.com/symptoms")
       .then((res) => {
         setAvailableSymptoms(res.data.symptoms);
       })
@@ -38,7 +38,7 @@ function SymptomChecker() {
   const handleSubmit = async () => {
     try {
       const response = await axios.post(
-        "http://127.0.0.1:8000/predict",
+        "https://cureconnect-6klv.onrender.com/predict",
         {
           symptoms: selectedSymptoms.join(","),
         }
