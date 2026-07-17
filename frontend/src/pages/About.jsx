@@ -214,6 +214,10 @@ function About() {
             <span className="bg-blue-100 text-blue-700 px-4 py-2 rounded-full">
               Data Analytics
             </span>
+            
+            <span className="bg-blue-100 text-blue-700 px-4 py-2 rounded-full">
+             <a href="https://rohan-portfolio-orpin.vercel.app/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "underline", backgroundColor: "grey" }}>You can visit My Portfolio Here</a>
+            </span>
 
           </div>
 
